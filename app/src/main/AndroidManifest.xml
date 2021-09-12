@@ -20,6 +20,15 @@
         </activity>
         <activity android:name=".Activities.MainActivity"/>
         <activity android:name=".Activities.TeamsActivity"/>
+        <activity android:name=".Teams.Arsenal"/>
+        <activity android:name=".Teams.Chelsea"/>
+        <activity android:name=".Teams.LeicesterCity"/>
+        <activity android:name=".Teams.Liverpool"/>
+        <activity android:name=".Teams.ManchesterCity"/>
+        <activity android:name=".Teams.ManchesterUnited"/>
+        <activity android:name=".Teams.Spurs"/>
+        <activity android:name=".TeamsDetails.ArsenalPlayerDetails"/>
+        <activity android:name=".TeamsDetails.ChelseaPlayerDetails"/>
     </application>
 
 </manifest>

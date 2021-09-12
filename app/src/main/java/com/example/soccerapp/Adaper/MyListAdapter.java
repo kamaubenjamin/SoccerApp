@@ -11,12 +11,14 @@
         import android.widget.ImageView;
         import android.widget.RelativeLayout;
         import android.widget.TextView;
+        import android.widget.Toast;
 
         import androidx.recyclerview.widget.RecyclerView;
 
         import com.example.soccerapp.Activities.TeamsActivity;
         import com.example.soccerapp.R;
         import com.example.soccerapp.Teams.Arsenal;
+        import com.example.soccerapp.Teams.Chelsea;
         import com.example.soccerapp.Teams.ManchesterCity;
         import com.example.soccerapp.Teams.ManchesterUnited;
 
@@ -60,13 +62,13 @@
 
                         }
                         if(myListData.getDescription().contains("Chelsea")){
-                            intent = new Intent(view.getContext(), ManchesterCity.class);
+                            intent = new Intent(view.getContext(), Chelsea.class);
 
                         }
 
                         intent.putExtras(bundle);
                         view.getContext().startActivity(intent);
-                        //Toast.makeText(view.getContext(),"click on item: "+myListData.getDescription(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(view.getContext(),"click on item: "+myListData.getDescription(),Toast.LENGTH_LONG).show();
                     }
                 });
             }

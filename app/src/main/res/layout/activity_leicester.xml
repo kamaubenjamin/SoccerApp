@@ -64,6 +64,33 @@
             android:background="#0288D1"
             android:text="View View"
             android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Positions :
+             FORWARDS :(CF,LW.RW,FW)"
+            android:textColor="#F8FF3B"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MIDFIELDERS :(CAM,CM.RM,LM,CDM)"
+            android:textColor="#0DA913"
+            android:textSize="22dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEFENDERS: (CB,LB.RB,LM,CDM)"
+            android:textColor="#F8FF3B"
+            android:textSize="22dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WINGS :(RWB,LWB.)"
+            android:textColor="#F8FF3B"
+            android:textSize="22dp" />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
