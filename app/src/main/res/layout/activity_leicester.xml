@@ -35,11 +35,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:hint="Enter Email"
-            android:text="Enter Position"
             android:textColor="@color/design_default_color_surface" />
 
         <EditText
-            android:id="@+id/edittext_email"
+            android:id="@+id/edittext_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"

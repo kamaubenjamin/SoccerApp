@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.example.soccerapp.Db.DatabaseHelper;
 import com.example.soccerapp.Methods.TeamsModel;
 import com.example.soccerapp.R;
+import com.example.soccerapp.TeamsDetails.ArsenalPlayerDetails;
 import com.example.soccerapp.TeamsDetails.ChelseaPlayerDetails;
 
 public class Chelsea extends Activity {
@@ -44,7 +45,7 @@ public class Chelsea extends Activity {
                       db.addCHELSEA( teamsModel );
                       Toast.makeText( Chelsea.this, "Registered Successfully!", Toast.LENGTH_SHORT ).show();
                       finish();
-                      Intent intent = new Intent( Chelsea.this, ChelseaPlayerDetails.class );
+                      Intent intent = new Intent( Chelsea.this, Chelsea.class );
                       startActivity( intent );
                   }
               }
@@ -52,7 +53,7 @@ public class Chelsea extends Activity {
           button_view.setOnClickListener( new View.OnClickListener() {
               @Override
               public void onClick(View view) {
-                  Intent intent = new Intent(Chelsea.this, ChelseaPlayerDetails.class );
+                  Intent intent = new Intent(Chelsea.this,ChelseaPlayerDetails.class );
                   startActivity( intent );
               }
           } );

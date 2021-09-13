@@ -1,8 +1,9 @@
 package com.example.soccerapp.TeamsDetails;
 
-
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -21,22 +22,32 @@ public class ChelseaPlayerDetails  extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_arsenaldetails );
+        setContentView( R.layout.activity_chelsealdetails );
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-
-        //dISPLAYS ARSENAL PLAYER LIST
+        //DISPLAYS  PLAYER LIST
         DatabaseHelper databaseHelper = new DatabaseHelper(this);
+
         List<TeamsModel> studentsModels = databaseHelper.getChelseaPlayerList();
 
+
         if (studentsModels.size() > 0){
-            TeamsAdapter studentAdapter = new TeamsAdapter(studentsModels,ChelseaPlayerDetails.this);
-            recyclerView.setAdapter(studentAdapter);
-        }else {
+
+            TeamsAdapter studentAdapter1 = new TeamsAdapter(studentsModels,ChelseaPlayerDetails.this);
+
+
+            recyclerView.setAdapter(studentAdapter1);
+
+        }
+        else {
             Toast.makeText(this, "There is no Student in the database", Toast.LENGTH_SHORT).show();
         }
+
+
+
+
 
     }
 }

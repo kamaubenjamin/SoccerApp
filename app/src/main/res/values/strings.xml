@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SoccerApp</string>
+
+    <string name="dialog_message" />
+    <string name="dialog_title" />
+    <string name="Add_New">adddnew</string>
+
 </resources>

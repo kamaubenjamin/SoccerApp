@@ -36,7 +36,7 @@ public class Arsenal extends Activity {
 
                 String name= edittext_name.getText().toString();
                 String position = edittext_position.getText().toString();
-                String age= edittext_age.getText().toString();
+                String age = edittext_age.getText().toString();
 
                 if (name.length() <=0 ||  position.length() <=0 || age.length() <=0){
                     Toast.makeText(Arsenal.this, "Enter All Data", Toast.LENGTH_SHORT).show();
@@ -48,7 +48,7 @@ public class Arsenal extends Activity {
                     Toast.makeText( Arsenal.this,"Added SuccessFully",Toast.LENGTH_SHORT ).show();
                     finish();
                      Intent intent = new Intent(Arsenal.this,Arsenal.class);
-                    startActivity((intent));
+                    startActivity(intent);
 
                 }
 

@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/socc"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/socc"
         android:supportsRtl="true">
         android:theme="@style/Theme.SoccerApp">
         <activity
@@ -29,6 +29,11 @@
         <activity android:name=".Teams.Spurs"/>
         <activity android:name=".TeamsDetails.ArsenalPlayerDetails"/>
         <activity android:name=".TeamsDetails.ChelseaPlayerDetails"/>
+        <activity android:name=".TeamsDetails.ManUnitedPlayerDetails"/>
+        <activity android:name=".TeamsDetails.LeicesterPlayerDetails"/>
+        <activity android:name=".TeamsDetails.LiverpoolPlayerDetails"/>
+        <activity android:name=".TeamsDetails.SpursPlayerDetails"/>
+        <activity android:name=".TeamsDetails.ManCityPlayerDetails"/>
     </application>
 
 </manifest>

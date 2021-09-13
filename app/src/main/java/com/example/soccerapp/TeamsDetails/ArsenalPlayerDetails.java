@@ -28,16 +28,24 @@ public class ArsenalPlayerDetails  extends Activity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-          //dISPLAYS ARSENAL PLAYER LIST
+          //dISPLAYS  PLAYER LIST
         DatabaseHelper databaseHelper = new DatabaseHelper(this);
         List<TeamsModel> studentsModels = databaseHelper.getArsenalPlayerList();
 
+
         if (studentsModels.size() > 0){
             TeamsAdapter studentAdapter = new TeamsAdapter(studentsModels,ArsenalPlayerDetails.this);
+
             recyclerView.setAdapter(studentAdapter);
-        }else {
+
+        }
+        else {
             Toast.makeText(this, "There is no Student in the database", Toast.LENGTH_SHORT).show();
         }
+
+
+
+
 
     }
 }

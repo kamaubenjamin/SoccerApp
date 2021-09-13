@@ -19,8 +19,11 @@
         import com.example.soccerapp.R;
         import com.example.soccerapp.Teams.Arsenal;
         import com.example.soccerapp.Teams.Chelsea;
+        import com.example.soccerapp.Teams.LeicesterCity;
+        import com.example.soccerapp.Teams.Liverpool;
         import com.example.soccerapp.Teams.ManchesterCity;
         import com.example.soccerapp.Teams.ManchesterUnited;
+        import com.example.soccerapp.Teams.Spurs;
 
         public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder>{
             private MyListData[] listdata;
@@ -61,8 +64,25 @@
                             intent = new Intent(view.getContext(), ManchesterUnited.class);
 
                         }
+                        if(myListData.getDescription().contains("ManchesterCity")){
+                            intent = new Intent(view.getContext(), ManchesterCity.class);
+
+                        }
                         if(myListData.getDescription().contains("Chelsea")){
                             intent = new Intent(view.getContext(), Chelsea.class);
+
+                        }
+                        if(myListData.getDescription().contains("Liverpool")){
+                            intent = new Intent(view.getContext(), Liverpool.class);
+
+                        }
+
+                        if(myListData.getDescription().contains("Leicester")){
+                            intent = new Intent(view.getContext(), LeicesterCity.class);
+
+                        }
+                        if(myListData.getDescription().contains("Spurs")){
+                            intent = new Intent(view.getContext(), Spurs.class);
 
                         }
 

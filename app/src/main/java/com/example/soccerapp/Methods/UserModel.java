@@ -30,6 +30,11 @@ public class UserModel {
         this.phone = phone;
     }
 
+    public UserModel(String stringEmail, String stringPassword) {
+        this.email = email;
+        this.pass = pass;
+    }
+
     public Integer getId() {
 
         return id;
